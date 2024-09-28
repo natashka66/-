@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="rus">
+    <head>
+        <title>Отправка заявки на конференцию</title>
+    </head>
+    <body>
+        <h1>Отправка заявки на конференцию</h1>
+        <h2>Основные данные</h2>
+        <p><b><i>* Фамилия, имя, отчество:</i></b></p>
+        <form method="post">
+            <input type="text" required size="45"><br>
+            <p><b><i>Дата рождения:</i></b></p>
+            <input type="date" size="50"><br>
+            <p><i><b>Пол:</b></i></p>
+            <input type="radio" name="gender"><label>мужской</label>
+            <input type="radio" name="gender"><label>женский</label>
+            
+            <h2>Данные для создания личного кабинета</h2>
+            <p><b><i>* Адрес электронной почты:</i></b></p>
+            <input type="email" required size="45"><br>
+            <p><i><b>* Пароль для создания личного кабинета:</b></i></p>
+            <input type="password" required size="45"><br>
+            <p><i><b>* Подтверждение пароля:</b></i></p>
+            <input type="password" required size="45"><br>
+        
+            <h2>Материалы для конференции</h2>
+            <p><i><b>* Тема доклада:</b></i></p>
+            <input type="text" required size="45"><br>
+            <p><i><b>* Тезисы доклада (не более 1000 символов):</b></i></p>
+           <textarea cols="43" rows="9"></textarea>
+            <p><b><i>Файл презентации:</i></b></p>
+            <input type="file"><br>
+            <h2>Дополнительные опции</h2>
+            <br>
+            <input type="checkbox"><label>Проживание в отеле</label><br>
+            <input type="checkbox" checked><label>Завтрак</label><br>
+            <input type="checkbox"><label>Обед</label><br>
+            <input type="checkbox"><label>Ужин</label><br>
+            <hr>
+            <input type="submit" value="Отправить">
+            <hr>
+            <p>* Поля, отмеченные звездочкой, являются обязательными для заполнения</p>
+        </form>
+    </body>
+</html>
